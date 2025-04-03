@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Lucas</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Menu superior -->
+  <header class="top-header">
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#" class="tab-link active" data-tab="about" data-i18n="menu_about">About</a></li>
+        <li><a href="#" class="tab-link" data-tab="resume" data-i18n="menu_resume">Resume</a></li>
+        <li><a href="#" class="tab-link" data-tab="portfolio" data-i18n="menu_portfolio">Portfolio</a></li>
+        <li><a href="#" class="tab-link" data-tab="contact" data-i18n="menu_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="language-toggle">
+      <button id="toggle-lang">🇬🇧 English</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="assets/img/foto-perfil.png" alt="Foto de perfil" class="profile-img" />
+        <h2 class="name">Lucas</h2>
+        <p class="tag">Full Stack Developer</p>
+      </div>
+
+      <div class="contact">
+        <p><strong>Email:</strong> lucas@email.com</p>
+        <p><strong data-i18n="phone">Phone:</strong> +55 00 00000-0000</p>
+        <p><strong data-i18n="birthday">Birthday:</strong> June 18, 2000</p>
+        <p><strong data-i18n="location">Location:</strong> Brazil</p>
+      </div>
+
+    
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <!-- Aba: Sobre mim -->
+      <section class="tab-content active" data-content="about">
+        <div class="card section">
+          <h2 class="section-title" data-i18n="about_title">About Me</h2>
+          <p data-i18n="about_text1">
+            I'm a Full Stack Developer with solid experience in building scalable web and mobile applications. I work across the stack using modern technologies like React, Next.js, React Native, TypeScript, PHP (CodeIgniter), and MySQL databases.
+          </p>
+          <p data-i18n="about_text2">
+            I'm passionate about creating intuitive, responsive interfaces with a strong focus on performance and user experience. I work in Agile environments (Scrum and Kanban), use Git/GitLab for version control, and follow clean code principles like SOLID and TDD to ensure maintainable and efficient systems.
+          </p>
+        </div>
+
+        <div class="card section" id="doing">
+          <h2 class="section-title" data-i18n="doing_title">What I'm Doing</h2>
+          <div class="doing-list">
+            <div class="doing-item border-yellow">
+              <img src="assets/img/nextjs.png" alt="Next.js" />
+              <p><strong>Next.js</strong></p>
+              <p data-i18n="doing_nextjs">Desenvolvimento de interfaces modernas e escaláveis com foco em performance, SSR/SSG e boas práticas de SEO.</p>
+            </div>
+    
+            <div class="doing-item border-green">
+              <img src="assets/img/tailwind.png" alt="Tailwind CSS" />
+              <p><strong>Tailwind CSS</strong></p>
+              <p data-i18n="doing_tailwind">Estilização de interfaces modernas e responsivas com produtividade, consistência e foco em performance.</p>
+            </div>
+    
+            <div class="doing-item border-red">
+              <img src="assets/img/php.png" alt="PHP" />
+              <p><strong>PHP (CodeIgniter)</strong></p>
+              <p data-i18n="doing_php">Desenvolvimento de APIs leves e performáticas para integração com aplicações frontend.</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="card section skill-box" id="skills">
+          <h2 class="section-title" data-i18n="menu_skills">Main Skill</h2>
+          <div class="skills-grid styled">
+            <div class="skill-category">
+              <h3 data-i18n="skills_languages_title">Languages:</h3>
+              <ul>
+                <li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>SQL</li><li>HTML</li><li>CSS</li><li>React</li><li>Next.js</li><li>React Native</li><li>Tailwind CSS</li><li>Styled Components</li><li>Node.js (Express)</li><li>CodeIgniter</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3 data-i18n="skills_database_title">Database:</h3>
+              <ul><li>MySQL</li></ul>
+            </div>
+            <div class="skill-category">
+              <h3 data-i18n="skills_devops_title">DevOps:</h3>
+              <ul>
+                <li>GitHub Actions</li><li>Jenkins</li><li>Docker</li><li>Git</li><li>GitLab</li><li>AWS (EC2, S3)</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3 data-i18n="skills_ide_title">IDE:</h3>
+              <ul><li>Visual Studio Code</li><li>Android Studio</li><li>Xcode</li></ul>
+            </div>
+            <div class="skill-category">
+              <h3 data-i18n="skills_tools_title">Ferramentas:</h3>
+              <ul>
+                <li>Git</li><li>GitHub Projects</li><li>Trello</li><li>IA Generativa</li><li>Notion</li><li>Blender</li><li>Jira</li><li>Photoshop</li><li>Pacote Office</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3 data-i18n="skills_soft_title">Soft Skills:</h3>
+              <ul>
+                <li>Ágil</li><li>Comunicação</li><li>Trabalho em equipe</li><li>Autonomia</li><li>P&D</li><li>Pensamento Crítico</li><li>Resolução de Problemas</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3 data-i18n="skills_principles_title">Princípios e Boas Práticas:</h3>
+              <ul>
+                <li>SOLID</li><li>TDD</li><li>Scrum</li><li>Kanban</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn-outline" data-i18n="explore_resume">Explore Resume</a>
+        </section>
+      </section>
+
+      <!-- Aba: Currículo -->
+      <section class="tab-content" data-content="resume">
+        <div class="card section" id="resume">
+          <h2 class="section-title" data-i18n="menu_resume">Resume</h2>
+
+          <!-- <div class="timeline"> -->
+            <div class="experience-item">
+              <h3 class="timeline-title">
+                <img src="assets/img/finne-logo.png" alt="Finne Logo" class="company-logo" />
+                <span data-i18n="resume_finne_title">Finne</span>
+              </h3>
+              <p class="timeline-role" data-i18n="resume_finne_role">Systems Development Analyst III</p>
+              <p class="timeline-date">Sep 2023 — Present</p>
+              <p class="timeline-desc" data-i18n="resume_finne_desc"></p>
+              <ul class="timeline-tasks" data-i18n="resume_finne_tasks"></ul>
+          
+              <h3 class="timeline-title">
+                <img src="assets/img/dimensa-logo.png" alt="Dimensa Logo" class="company-logo" />
+                <span data-i18n="resume_dimensa_title">Dimensa Tecnologia</span>
+              </h3>
+              <p class="timeline-role" data-i18n="resume_dimensa_roles"></p>
+              <p class="timeline-desc" data-i18n="resume_dimensa_desc"></p>
+              <ul class="timeline-tasks" data-i18n="resume_dimensa_tasks"></ul>
+            </div>
+          <!-- </div> -->
+          
+          <!-- <div class="timeline"> -->
+            <h2 class="section-title" data-i18n="education">Education</h2>
+            <h3 class="timeline-title">
+              <img src="assets/img/estacio-logo.png" alt="Finne Logo" class="company-logo" />
+              <span data-i18n="resume_edu_title">Estácio</span>
+            </h3>
+            <p class="timeline-role" data-i18n="resume_edu_course">Graduação, Análise e Desenvolvimento de Sistemas</p>
+          </div>
+        <!-- </div> -->
+
+      </section>
+
+      <!-- Outras abas (em branco por enquanto) -->
+      <section class="tab-content" data-content="portfolio"></section>
+      <section class="tab-content" data-content="contact"></section>
+    </main>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
