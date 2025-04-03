@@ -1,173 +1,312 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Lucas</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas | Full Stack Developer</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-  <!-- Menu superior -->
-  <header class="top-header">
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#" class="tab-link active" data-tab="about" data-i18n="menu_about">About</a></li>
-        <li><a href="#" class="tab-link" data-tab="resume" data-i18n="menu_resume">Resume</a></li>
-        <li><a href="#" class="tab-link" data-tab="portfolio" data-i18n="menu_portfolio">Portfolio</a></li>
-        <li><a href="#" class="tab-link" data-tab="contact" data-i18n="menu_contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="language-toggle">
-      <button id="toggle-lang">🇬🇧 English</button>
-    </div>
-  </header>
-
-  <div class="layout">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="assets/img/foto-perfil.png" alt="Foto de perfil" class="profile-img" />
-        <h2 class="name">Lucas</h2>
-        <p class="tag">Full Stack Developer</p>
-      </div>
-
-      <div class="contact">
-        <p><strong>Email:</strong> lucas@email.com</p>
-        <p><strong data-i18n="phone">Phone:</strong> +55 00 00000-0000</p>
-        <p><strong data-i18n="birthday">Birthday:</strong> June 18, 2000</p>
-        <p><strong data-i18n="location">Location:</strong> Brazil</p>
-      </div>
-
-    
-    </aside>
-
-    <!-- Conteúdo principal -->
-    <main class="content">
-      <!-- Aba: Sobre mim -->
-      <section class="tab-content active" data-content="about">
-        <div class="card section">
-          <h2 class="section-title" data-i18n="about_title">About Me</h2>
-          <p data-i18n="about_text1">
-            I'm a Full Stack Developer with solid experience in building scalable web and mobile applications. I work across the stack using modern technologies like React, Next.js, React Native, TypeScript, PHP (CodeIgniter), and MySQL databases.
-          </p>
-          <p data-i18n="about_text2">
-            I'm passionate about creating intuitive, responsive interfaces with a strong focus on performance and user experience. I work in Agile environments (Scrum and Kanban), use Git/GitLab for version control, and follow clean code principles like SOLID and TDD to ensure maintainable and efficient systems.
-          </p>
-        </div>
-
-        <div class="card section" id="doing">
-          <h2 class="section-title" data-i18n="doing_title">What I'm Doing</h2>
-          <div class="doing-list">
-            <div class="doing-item border-yellow">
-              <img src="assets/img/nextjs.png" alt="Next.js" />
-              <p><strong>Next.js</strong></p>
-              <p data-i18n="doing_nextjs">Desenvolvimento de interfaces modernas e escaláveis com foco em performance, SSR/SSG e boas práticas de SEO.</p>
-            </div>
-    
-            <div class="doing-item border-green">
-              <img src="assets/img/tailwind.png" alt="Tailwind CSS" />
-              <p><strong>Tailwind CSS</strong></p>
-              <p data-i18n="doing_tailwind">Estilização de interfaces modernas e responsivas com produtividade, consistência e foco em performance.</p>
-            </div>
-    
-            <div class="doing-item border-red">
-              <img src="assets/img/php.png" alt="PHP" />
-              <p><strong>PHP (CodeIgniter)</strong></p>
-              <p data-i18n="doing_php">Desenvolvimento de APIs leves e performáticas para integração com aplicações frontend.</p>
-            </div>
-          </div>
-        </div>
-
-        <section class="card section skill-box" id="skills">
-          <h2 class="section-title" data-i18n="menu_skills">Main Skill</h2>
-          <div class="skills-grid styled">
-            <div class="skill-category">
-              <h3 data-i18n="skills_languages_title">Languages:</h3>
-              <ul>
-                <li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>SQL</li><li>HTML</li><li>CSS</li><li>React</li><li>Next.js</li><li>React Native</li><li>Tailwind CSS</li><li>Styled Components</li><li>Node.js (Express)</li><li>CodeIgniter</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3 data-i18n="skills_database_title">Database:</h3>
-              <ul><li>MySQL</li></ul>
-            </div>
-            <div class="skill-category">
-              <h3 data-i18n="skills_devops_title">DevOps:</h3>
-              <ul>
-                <li>GitHub Actions</li><li>Jenkins</li><li>Docker</li><li>Git</li><li>GitLab</li><li>AWS (EC2, S3)</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3 data-i18n="skills_ide_title">IDE:</h3>
-              <ul><li>Visual Studio Code</li><li>Android Studio</li><li>Xcode</li></ul>
-            </div>
-            <div class="skill-category">
-              <h3 data-i18n="skills_tools_title">Ferramentas:</h3>
-              <ul>
-                <li>Git</li><li>GitHub Projects</li><li>Trello</li><li>IA Generativa</li><li>Notion</li><li>Blender</li><li>Jira</li><li>Photoshop</li><li>Pacote Office</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3 data-i18n="skills_soft_title">Soft Skills:</h3>
-              <ul>
-                <li>Ágil</li><li>Comunicação</li><li>Trabalho em equipe</li><li>Autonomia</li><li>P&D</li><li>Pensamento Crítico</li><li>Resolução de Problemas</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3 data-i18n="skills_principles_title">Princípios e Boas Práticas:</h3>
-              <ul>
-                <li>SOLID</li><li>TDD</li><li>Scrum</li><li>Kanban</li>
-              </ul>
-            </div>
-          </div>
-          <a href="#" class="btn-outline" data-i18n="explore_resume">Explore Resume</a>
-        </section>
-      </section>
-
-      <!-- Aba: Currículo -->
-      <section class="tab-content" data-content="resume">
-        <div class="card section" id="resume">
-          <h2 class="section-title" data-i18n="menu_resume">Resume</h2>
-
-          <!-- <div class="timeline"> -->
-            <div class="experience-item">
-              <h3 class="timeline-title">
-                <img src="assets/img/finne-logo.png" alt="Finne Logo" class="company-logo" />
-                <span data-i18n="resume_finne_title">Finne</span>
-              </h3>
-              <p class="timeline-role" data-i18n="resume_finne_role">Systems Development Analyst III</p>
-              <p class="timeline-date">Sep 2023 — Present</p>
-              <p class="timeline-desc" data-i18n="resume_finne_desc"></p>
-              <ul class="timeline-tasks" data-i18n="resume_finne_tasks"></ul>
-          
-              <h3 class="timeline-title">
-                <img src="assets/img/dimensa-logo.png" alt="Dimensa Logo" class="company-logo" />
-                <span data-i18n="resume_dimensa_title">Dimensa Tecnologia</span>
-              </h3>
-              <p class="timeline-role" data-i18n="resume_dimensa_roles"></p>
-              <p class="timeline-desc" data-i18n="resume_dimensa_desc"></p>
-              <ul class="timeline-tasks" data-i18n="resume_dimensa_tasks"></ul>
-            </div>
-          <!-- </div> -->
-          
-          <!-- <div class="timeline"> -->
-            <h2 class="section-title" data-i18n="education">Education</h2>
-            <h3 class="timeline-title">
-              <img src="assets/img/estacio-logo.png" alt="Finne Logo" class="company-logo" />
-              <span data-i18n="resume_edu_title">Estácio</span>
-            </h3>
-            <p class="timeline-role" data-i18n="resume_edu_course">Graduação, Análise e Desenvolvimento de Sistemas</p>
-          </div>
-        <!-- </div> -->
-
-      </section>
-
-      <!-- Outras abas (em branco por enquanto) -->
-      <section class="tab-content" data-content="portfolio"></section>
-      <section class="tab-content" data-content="contact"></section>
-    </main>
+<body class="grid-bg">
+  <div class="language-toggle">
+    <button class="lang-btn active" data-lang="en">🇺🇸 EN</button>
+    <button class="lang-btn" data-lang="pt">🇧🇷 PT</button>
   </div>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="badge-row">
+        <span class="badge" data-i18n="badge_welcome">Welcome to my website</span>
+        <span class="badge blue" data-i18n="badge_ui">FullStack</span>
+        <span class="badge purple" data-i18n="badge_code">Clean Code</span>
+        <span class="badge yellow" data-i18n="badge_innovation">Innovation</span>
+      </div>
 
-  <script src="assets/js/script.js"></script>
+      <h1 class="hero-title">
+        <span data-i18n="hero_hello">Hello</span> <br />
+        <span data-i18n="hero_im">I'm</span> <span class="gradient-text code-title">&lt;Lucas /&gt;<span class="blinker">|</span></span>
+      </h1>
+
+      <div class="hero-tags">
+        <span class="badge dark" data-i18n="badge_hero">Software Developer</span>
+      </div>
+
+      <p class="hero-sub" data-i18n="hero_desc">
+        Specialist in building modern, high-performance, and well-structured web applications. 🚀
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://github.com/lucasgomesv5" target="_blank" class="btn btn-outline" data-i18n="btn_learn">Learn More</a>
+        <a href="#resume" class="btn btn-dark" data-i18n="btn_resume">Get Resume</a>
+      </div>
+    </div>
+
+  <div class="hero-right">
+  <div class="code-window">
+    <div class="window-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="filename">developer.js</span>
+    </div>
+    <pre class="code-block">
+      <code>
+      <span class="keyword">const</span> <span class="property">profile</span> = {
+        <span class="property">name</span>: <span class="string">'Lucas'</span>,
+        <span class="property">title</span>: <span class="string">'Full Stack Developer'</span>,
+        <span class="property">skills</span>: [
+          <span class="string">'React'</span>, <span class="string">'NextJS'</span>, <span class="string">'TypeScript'</span>,
+          <span class="string">'Node.js'</span>, <span class="string">'MySQL'</span>
+        ],
+        <span class="property">hardWorker</span>: <span class="boolean">true</span>,
+        <span class="property">quickLearner</span>: <span class="boolean">true</span>,
+        <span class="property">problemSolver</span>: <span class="boolean">true</span>,
+        <span class="property">yearsOfExperience</span>: <span class="number">3</span>,
+        <span class="property">hireable</span>: <span class="keyword">function</span>() {
+          <span class="keyword">return</span> (
+            <span class="keyword">this</span>.<span class="property">hardWorker</span> <span class="operator">&&</span>
+            <span class="keyword">this</span>.<span class="property">problemSolver</span> <span class="operator">&&</span>
+            <span class="keyword">this</span>.<span class="property">skills</span>.length <span class="operator">>=</span> <span class="number">5</span> <span class="operator">&&</span>
+            <span class="keyword">this</span>.<span class="property">yearsOfExperience</span> <span class="operator">>=</span> <span class="number">3</span>
+          );
+        }
+      };
+      </code>
+      </pre>
+    </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="skills-section">
+    <div class="skills-title-wrapper">
+      <h2 class="skills-title code-title" data-i18n="skills_title">&lt;Skills /&gt;<span class="blinker">|</span></h2>
+    </div>
+    <div class="skills-grid">
+    <div class="skill-card">
+      <h3><i data-lucide="monitor-smartphone"></i> Frontend Development</h3>
+      <div class="skill-tags">
+        <span><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /> React</span>
+        <span><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" /> Next.js</span>
+        <span><img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" /> Vue.js</span>
+        <span><img src="https://cdn.simpleicons.org/react/61DAFB" alt="ReactNative" /> React Native</span>
+        <span><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" /> TypeScript</span>
+        <span><img src="https://cdn.simpleicons.org/tailwindcss/38BDF8" alt="Tailwind CSS" /> Tailwind CSS</span>
+        <span><img src="https://cdn.simpleicons.org/styledcomponents/DB7093" alt="Styled Components" /> Styled Components</span>
+        <span><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" /> HTML5</span>
+        <span><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" /> CSS3</span>
+        
+      </div>
+    </div>
+  
+    <div class="skill-card">
+      <h3><i data-lucide="server"></i> Backend Development</h3>
+      <div class="skill-tags">
+        <span><img src="https://cdn.simpleicons.org/node.js/339933" alt="Node.js" /> Node.js</span>
+        <span><img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" /> PHP</span>
+        <span><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" /> MySQL</span>
+        <span><img src="https://cdn.simpleicons.org/codeigniter/EF4223" alt="Code Igniter" /> Code Igniter</span>
+        <span><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" /> MongoDB</span>
+        <span><img src="https://cdn.simpleicons.org/graphql/E10098" alt="GraphQL" /> GraphQL</span>
+      </div>
+    </div>
+  
+    <div class="skill-card">
+      <h3><i data-lucide="cloud"></i> Cloud & DevOps</h3>
+      <div class="skill-tags">
+        <span><img src="https://cdn.simpleicons.org/amazonwebservices/232F3E" alt="AWS" /> AWS</span>
+        <span><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" /> Docker</span>
+        <span><img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions" /> GitHub Actions</span>
+        <span><img src="https://cdn.simpleicons.org/jenkins/D24939" alt="Jenkins" /> Jenkins</span>
+        <span><img src="https://cdn.simpleicons.org/gitlab/FCA121" alt="GitLab" /> GitLab</span>
+      </div>
+    </div>
+  
+    <div class="skill-card">
+      <h3><i data-lucide="wrench"></i> Tools & Technologies</h3>
+      <div class="skill-tags">
+        <span><img src="https://cdn.simpleicons.org/codesandbox/007ACC" alt="VS Code" /> VS Code</span>
+        <span><img src="https://cdn.simpleicons.org/jira/0052CC" alt="Jira" /> Jira</span>
+        <span><img src="https://cdn.simpleicons.org/xcode/147EFB" alt="XCode" /> Xcode</span>
+        <span><img src="https://cdn.simpleicons.org/androidstudio/3DDC84" alt="androidstudio" /> Android Studio</span>
+        <span><img src="https://cdn.simpleicons.org/expo/000000" alt="expo" /> Expo</span>
+        <span><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" /> Figma</span>
+      </div>
+    </div>
+  
+    <div class="skill-card">
+      <h3><i data-lucide="layout-dashboard"></i> UI/UX Design</h3>
+      <div class="skill-tags">
+        <span><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" /> Figma</span>
+        <span><i data-lucide="monitor-smartphone" class="icon-purple"></i> Responsive Design</span>
+        <span><i data-lucide="layout-template" class="icon-blue"></i> Wireframing</span>
+        <span><i data-lucide="move" class="icon-yellow"></i> Prototyping</span>
+      </div>
+    </div>
+  
+    <div class="skill-card">
+      <h3><i data-lucide="heart-handshake"></i> Soft Skills</h3>
+      <div class="skill-tags">
+        <span><i data-lucide="repeat" class="icon-yellow"></i> Agile</span>
+        <span><i data-lucide="message-circle" class="icon-blue"></i> Communication</span>
+        <span><i data-lucide="users" class="icon-green"></i> Teamwork</span>
+        <span><i data-lucide="brain" class="icon-pink"></i> Critical Thinking</span>
+        <span><i data-lucide="lightbulb" class="icon-yellow"></i> Problem Solving</span>
+        <span><i data-lucide="calendar-check" class="icon-red"></i> Self-planning</span>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="experience-title-wrapper">
+      <h2 class="experience-title code-title" data-i18n="experience_title">&lt;Experience /&gt;<span class="blinker">|</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="experience-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="/assets/img/finne-logo.png" alt="Finne Logo" />
+          </div>
+          <div class="card-info">
+            <h3 class="role" data-i18n="resume_finne_role">Systems Development Analyst III</h3>
+            <p class="company" data-i18n="resume_finne_title">Finne</p>
+            <span class="date" data-i18n="exp_finne_date">2023 - Present</span>
+          </div>
+          <button class="toggle-btn" onclick="toggleCard(this)">
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </div>
+        <p class="card-description" data-i18n="resume_finne_desc">
+          Finne is a fintech startup delivering innovative financial solutions. As a Full Stack Developer, I work across the entire stack.
+        </p>
+        <ul class="card-details">
+          <li data-i18n="resume_finne_task1">Developing responsive and dynamic interfaces using React and Next.js.</li>
+          <li data-i18n="resume_finne_task2">Writing maintainable, scalable code with TypeScript.</li>
+          <li data-i18n="resume_finne_task3">Building and maintaining RESTful APIs using PHP and CodeIgniter.</li>
+          <li data-i18n="resume_finne_task4">Designing, querying, and optimizing MySQL databases.</li>
+          <li data-i18n="resume_finne_task5">Creating and maintaining cross-platform mobile apps using React Native.</li>
+          <li data-i18n="resume_finne_task6">Working in Agile (Scrum), using Jira for tracking.</li>
+          <li data-i18n="resume_finne_task7">Managing code with Git and GitLab.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="/assets/img/dimensa-logo.png" alt="Finne Logo" />
+          </div>
+          <div class="card-info">
+            <h3 class="role" data-i18n="resume_dimensa_roles">Systems Development Analyst II / I</h3>
+            <p class="company" data-i18n="resume_dimensa_title">Dimensa Tecnologia</p>
+            <span class="date" data-i18n="exp_dimensa_date">2022 - 2023</span>
+          </div>
+          <button class="toggle-btn" onclick="toggleCard(this)">
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </div>
+        <p class="card-description" data-i18n="resume_dimensa_desc">
+          Development of high-quality mobile apps with React Native and dynamic websites with React.js. End-to-end dev and maintenance.
+        </p>
+        <ul class="card-details">
+          <li data-i18n="resume_dimensa_task1">Backend with PHP and MySQL.</li>
+          <li data-i18n="resume_dimensa_task2">Agile using Scrum and Kanban.</li>
+          <li data-i18n="resume_dimensa_task3">Collaboration on feature improvements.</li>
+          <li data-i18n="resume_dimensa_task4">Code versioning with Git.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="experience-section">
+    <div class="skills-title-wrapper">
+      <h2 class="skills-title code-title" data-i18n="education_title">&lt;Education /&gt;<span class="blinker">|</span></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="experience-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="assets/img/estacio-logo.png" alt="Estácio Logo" width="32" height="32" />
+          </div>
+          <div class="card-info">
+            <h3 class="role" data-i18n="resume_edu_title">Estácio</h3>
+            <p class="company" data-i18n="resume_edu_course">Bachelor's Degree in Systems Analysis and Development</p>
+            <span class="date">2022 - 2024</span>
+          </div>
+          <button class="toggle-btn" onclick="toggleCard(this)">
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </div>
+        <ul class="card-details">
+          <li data-i18n="edu_task1">Focused on software development, databases, web and mobile technologies.</li>
+          <li data-i18n="edu_task2">Projects involving systems analysis, full stack apps, and agile practices.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <img src="assets/img/question-mark.png" alt="Postgrad Logo" width="32" height="32" />
+          </div>
+          <div class="card-info">
+            <h3 class="role" data-i18n="resume_postgrad_title">Postgraduate Degree in Software Engineering</h3>
+            <p class="company" data-i18n="resume_postgrad_school">TBD</p>
+            <span class="date" data-i18n="resume_postgrad_date">2025-2026</span>
+          </div>
+          <button class="toggle-btn" onclick="toggleCard(this)">
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </div>
+        <ul class="card-details">
+          <li data-i18n="postgrad_task1">Advanced software architecture and engineering practices.</li>
+          <li data-i18n="postgrad_task2">Focus on scalable systems, performance, and design patterns.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact-section">
+    <div class="skills-title-wrapper">
+      <h2 class="skills-title code-title" data-i18n="contact_title">&lt;Contact /&gt;<span class="blinker">|</span></h2>
+    </div>
+
+    <form  id="contact-form" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_autoresponse" value="Obrigado! Recebemos sua mensagem.">
+      <div class="form-group">
+        <input type="text" name="name" id="name" placeholder="Your Name" data-i18n-placeholder="placeholder_name" required />
+      </div>
+    
+      <div class="form-group">
+        <input type="email" name="email" id="email" placeholder="Your Email" data-i18n-placeholder="placeholder_email" required />
+      </div>
+    
+      <div class="form-group">
+        <input type="text" name="subject" id="subject" placeholder="Subject" data-i18n-placeholder="placeholder_subject" required />
+      </div>
+    
+      <div class="form-group">
+        <textarea name="message" id="message" placeholder="Your Message" data-i18n-placeholder="placeholder_message" required></textarea>
+      </div>
+    
+
+      <button type="submit" class="contact-button">
+        <span data-i18n="contact_send">Send Message</span>
+        <i data-lucide="send"></i>
+      </button>
+    </form>
+  </section>
+
+  <script src="/assets/js/i18n.js"></script> 
+  <script src="/assets/js/script.js"></script>
+  
+  <div id="toast" class="toast">Mensagem enviada com sucesso! 🚀</div>
 </body>
 </html>
