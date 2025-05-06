@@ -83,10 +83,10 @@ function updateResumeLink(lang) {
   const resumeBtn = document.getElementById("resume-download");
   if (resumeBtn) {
     if (lang === "pt") {
-      resumeBtn.setAttribute("href", "assets/files/CV-Lucas-PT.pdf");
+      resumeBtn.setAttribute("href", "assets/files/Lucas_Vieira_CV_en.pdf");
     } else {
-      resumeBtn.setAttribute("href", "assets/files/CV-Lucas-EN.pdf");
+      resumeBtn.setAttribute("href", "assets/files/Lucas_Vieira_CV_pt.pdf");
     }
-    resumeBtn.setAttribute("download", "CV-Lucas.pdf");
+    resumeBtn.setAttribute("download", "Lucas_Vieira_CV.pdf");
   }
 }
