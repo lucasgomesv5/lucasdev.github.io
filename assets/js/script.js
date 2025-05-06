@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const key = el.getAttribute("data-i18n-placeholder");
       if (strings[key]) el.setAttribute("placeholder", strings[key]);
     });
+
+    updateResumeLink(lang);
     
     localStorage.setItem("lang", lang);
 
@@ -76,3 +78,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function updateResumeLink(lang) {
+  const resumeBtn = document.getElementById("resume-download");
+  if (resumeBtn) {
+    if (lang === "pt") {
+      resumeBtn.setAttribute("href", "assets/files/CV-Lucas-PT.pdf");
+    } else {
+      resumeBtn.setAttribute("href", "assets/files/CV-Lucas-EN.pdf");
+    }
+    resumeBtn.setAttribute("download", "CV-Lucas.pdf");
+  }
+}
