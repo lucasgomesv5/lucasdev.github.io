@@ -30,7 +30,7 @@ window.i18n = {
 const profile = {
   name: 'Lucas',
   title: 'Full Stack Developer',
-  skills: ['React', 'NextJS', 'TypeScript', 'Node.js', 'MySQL'],
+  skills: ['React', 'React Native, 'VueJS', 'NextJS', 'TypeScript', 'TailwindCSS', 'SassCSS', 'Styled Components', 'UI/UX', 'Node.js', 'NestJS', 'PHP', 'MySQL'],
   hardWorker: true,
   quickLearner: true,
   problemSolver: true,
@@ -111,7 +111,7 @@ const profile = {
 const perfil = {
   nome: 'Lucas',
   cargo: 'Desenvolvedor Full Stack',
-  habilidades: ['React', 'NextJS', 'TypeScript', 'Node.js', 'MySQL'],
+  habilidades: ['React', 'React Native, 'VueJS', 'NextJS', 'TypeScript', 'TailwindCSS', 'SassCSS', 'Styled Components', 'UI/UX', 'Node.js', 'NestJS', 'PHP', 'MySQL'],
   trabalhadorDedicado: true,
   aprendizRapido: true,
   solucionadorDeProblemas: true,
